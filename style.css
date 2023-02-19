@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Mtavruli";
+    src: url(fonts/bpg_nino_mtavruli_bold.ttf);
+}
+
+@media screen and (max-width:1100px) {
+    .navbar-container {
+        width: 100%;
+        background-color: rgb(136, 101, 231);
+        font-size: 10px;
+        padding: 1px;
+    }
+}
+
+
+body {
+    height: 100vh;
+    background-color: rgb(136, 101, 231);
+}
+
+/* სქროლბარი */
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(92, 62, 177);
+    border-radius: 10px;
+}
+
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    user-select: none;
+}
+
+.logo-container a {
+    font-size: 28px;
+    color: rgb(92, 62, 177);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main-container a {
+    color: white;
+    font-family: "Mtavruli";
+    transition: 0.2s;
+}
+
+.main-container a:hover {
+    color: rgb(92, 62, 177);
+}
+
+.navbar-container a {
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.reklama-container {
+    width: 100%;
+    height: 350px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.contacts-container a {
+    font-size: 23px;
+    padding: 10px;
+    color: white;
+}
+
+.contacts-container a:hover {
+    color: purple;
+}
+
+.reklama-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(194, 203, 211);
+    user-select: none;
+}
+
+.fa-solid {
+    color: purple;
+}
+
+.reklama-container h1 {
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.forsell-container {
+    display: flex;
+    padding: 30px;
+    font-family: "Mtavruli";
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+.forsell-container h1 {
+    font-family: "Mtavruli";
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.forsell-container a {
+    text-decoration: none;
+}
+
+.forsell-container img {
+    width: 250px;
+    height: 300px;
+    border-radius: 10%;
+    margin: 30px;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.forsell-container img:hover {
+    transform: rotateZ(-5deg);
+    box-shadow: 0px 0px 10px purple,
+    0px 0px 10px purple,
+    0px 0px 10px purple,
+    0px 0px 10px purple,
+    0px 0px 10px purple,
+    0px 0px 10px purple,
+    0px 0px 10px purple,
+    0px 0px 10px purple,
+    0px 0px 10px purple;
+    
+}
+
+.section-one {
+    background: linear-gradient(rgb(92, 62, 177), purple);
+}
+
+
+.footer-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(105, 105, 105);
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Mtavruli";
+    user-select: none;
+}
+
+.footer-container p {
+    color: purple;
+}
+
+.footer-container h1 {
+    font-size: 25px;
+    color: white;
+}
+
+.footer-container .copyright {
+    position: absolute;
+    bottom: 2px;
+    color: black;
+    font-size: 15px;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
